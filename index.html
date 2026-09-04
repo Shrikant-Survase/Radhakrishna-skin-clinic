@@ -166,7 +166,8 @@
   /* ---------- doctor ---------- */
   .doctor-card{ background:var(--surface); border:1px solid var(--sage-line); border-radius:28px; display:grid; grid-template-columns:0.8fr 1.2fr; overflow:hidden; }
   @media (max-width:760px){ .doctor-card{ grid-template-columns:1fr; } }
-  .doctor-photo{ background:var(--sage); aspect-ratio:3/3.4; display:flex; align-items:center; justify-content:center; }
+  .doctor-photo{ background:var(--sage); aspect-ratio:3/3.4; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+  .doctor-photo img{ width:100%; height:100%; object-fit:cover; }
   .doctor-photo span{ font-size:13px; color:var(--ink-soft); text-align:center; padding:20px; }
   .doctor-body{ padding:36px; display:flex; flex-direction:column; justify-content:center; gap:14px; }
   .doctor-body h3{ font-size:24px; }
@@ -339,7 +340,7 @@
       </div>
     </div>
     <div class="hero-media">
-      <img src="https://images.unsplash.com/photo-1612531386530-97286d97c2d2?q=80&w=900&auto=format&fit=crop" alt="Placeholder dermatology consultation image — replace with real clinic photography" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrSYr-ihIJ6uQqdmt1RKd0x47b_h6p5s-NBH4jPXGzEy5yeJwBtxACpoU&s=10" alt="Placeholder dermatology consultation image — replace with real clinic photography" />
       <div class="hero-badge">
         <div class="hero-badge-ic"></div>
         <div><b>Consultation-first care</b><span>Every visit begins with listening</span></div>
@@ -402,15 +403,14 @@
       <h2>Meet the doctor</h2>
     </div>
     <div class="doctor-card">
-      <div class="doctor-photo"><span>Doctor photo<br/>to be added</span></div>
+      <div class="doctor-photo"><img src="image.png" alt="Doctor" /></div>
       <div class="doctor-body">
-        <h3>Dr. [Doctor Name — REPLACE ME]</h3>
+        <h3>Dr.Payal Shinde</h3>
         <div class="doctor-meta">
-          <span><b>Qualification:</b> [Qualification to be added]</span>
-          <span><b>Experience:</b> [Experience to be added]</span>
-          <span><b>Specialization:</b> [Specialization to be added]</span>
+          <span><b>Qualification:</b> MBBS, MD(Dermatology)</span>
+          <span><b>Experience:</b> 10 years</span>
+          <span><b>Specialization:</b> Dermatology</span>
         </div>
-        <div class="placeholder-note">No credentials have been added yet — this section will only display what the clinic provides and confirms.</div>
         <a href="#" class="btn btn-outline" style="align-self:flex-start; margin-top:8px;">About the Doctor</a>
       </div>
     </div>
@@ -475,7 +475,9 @@
       <div class="loc-row"><div class="loc-ic">💬</div><div><b>WhatsApp</b><span>[WhatsApp number to be added]</span></div></div>
       <div class="loc-row"><div class="loc-ic">🕐</div><div><b>Opening hours</b><span>[Hours to be added]</span></div></div>
     </div>
-    <div class="map-embed"><span>Google Maps embed placeholder — add the clinic's map link to enable directions.</span></div>
+    <div class="map-embed" style="padding: 0; display: block;">
+      <iframe src="https://maps.google.com/maps?q=Parbhani,Maharashtra&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0; border-radius: var(--radius-lg); min-height:340px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
   </div>
 </section>
 
